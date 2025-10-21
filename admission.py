@@ -87,5 +87,5 @@ with tab4:
     st.caption("Coverage plot of model predictions.")
 
 password_guess = st.text_input("What is the Password?")
-if password_guess != st.secrets("password") : 
+if password_guess != st.secrets["password"]:
     st.stop()
