@@ -85,3 +85,7 @@ with tab4:
     st.write("Coverage Plot")
     st.image('coverage_plot.svg')
     st.caption("Coverage plot of model predictions.")
+
+password_guess = st.text_input("What is the Password?")
+if password_guess != st.secrets("passwords") : 
+    st.stop()
