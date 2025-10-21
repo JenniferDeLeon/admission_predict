@@ -8,7 +8,7 @@ warnings.filterwarnings("ignore")
 
 password_guess = st.text_input("What is the Password?")
 
-if password_guess != st.secrets["jd-password"]:
+if password_guess != st.secrets["jdpassword"]:
     st.stop()
 
 # --- Page Setup ---
