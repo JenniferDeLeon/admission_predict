@@ -6,6 +6,11 @@ import warnings
 # Suppress warnings
 warnings.filterwarnings("ignore")
 
+password_guess = st.text_input("What is the Password?")
+
+if password_guess != st.secrets["jd-password"]:
+    st.stop()
+
 # --- Page Setup ---
 st.write("This app predicts the probability of admission to graduate school")
 st.title("Graduate Admission Predictor")
@@ -85,7 +90,3 @@ with tab4:
     st.write("Coverage Plot")
     st.image('coverage_plot.svg')
     st.caption("Coverage plot of model predictions.")
-
-password_guess = st.text_input("What is the Password?")
-if password_guess != st.secrets["password"]:
-    st.stop()
