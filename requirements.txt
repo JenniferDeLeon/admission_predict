@@ -1,9 +1,3 @@
-pandas
-numpy
-matplotlib
-scikit-learn
-mapie==0.9.1
-scipy
-jupyter
-ipykernel
-streamlit
+pandas==2.3.2
+streamlit==1.50.0
+MAPIE==1.1.0
